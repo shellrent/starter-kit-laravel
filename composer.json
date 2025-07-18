@@ -8,6 +8,8 @@
         "framework"
     ],
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": "^8.3",
         "ext-ctype": "*",
