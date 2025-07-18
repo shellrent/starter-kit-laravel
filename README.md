@@ -12,9 +12,9 @@
 - `./docker/8.3/project-installer/install-laravel-project.sh`
     - installa i vendor la prima volta - necessario per poi usare vendor/bin/sail
     - genera una nuova chiave app con artisan
-- `docker login -u {username_gitlab} -p {gitlab_token} dev-git-ext.serverlet.com:5050`
+- `docker login -u {username_gitlab} -p {gitlab_token} endpoint:5050`
   - il token deve essere un token di accesso personale con permessi di lettura e scrittura sui container registry
-  - creare il token su Gitlab con permessi `read_registry`, se non esiste già. https://dev-git-ext.serverlet.com/-/user_settings/personal_access_tokens
+  - creare il token su Gitlab con permessi `read_registry`, se non esiste già. https://endpoint/-/user_settings/personal_access_tokens
   - NON serve farlo se si è già stato fatto in passato verso quel server
 - `sail up -d`
     - sail scarica l'immagine dal container registry (se presente), altrimenti la costruisce
