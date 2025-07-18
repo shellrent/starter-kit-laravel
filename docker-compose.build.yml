@@ -5,7 +5,7 @@ services:
             dockerfile: Dockerfile
             args:
                 WWWGROUP: '${WWWGROUP}'
-        image: 'dev-git-ext.serverlet.com:5050/director/project-slug/backend'
+        image: 'endpoint:5050/directory/project-slug/backend'
         extra_hosts:
             - 'host.docker.internal:host-gateway'
         ports:
@@ -26,7 +26,7 @@ services:
         build:
             context: ./docker/mysql
             dockerfile: Dockerfile
-        image: 'dev-git-ext.serverlet.com:5050/director/project-slug/db'
+        image: 'endpoint:5050/directory/project-slug/db'
         ports:
             - '${FORWARD_DB_PORT:-3306}:3306'
         environment:
